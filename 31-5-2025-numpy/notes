@@ -6,3 +6,83 @@
 Identity matrix
 2d , diagnol - 1, linear algebra
 
+Here’s a clean and easy-to-reuse **Git command notes** for future reference:
+
+---
+
+## ✅ Git Commands Cheatsheet (VS Code → GitHub)
+
+### 🔧 1. (Optional) Shell integration fix (ignore if not needed)
+
+```powershell
+try { . "c:\Users\<username>\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+```
+
+---
+
+### 🌱 2. Initialize Git in your project folder
+
+```bash
+git init
+```
+
+---
+
+### ➕ 3. Add all files
+
+```bash
+git add .
+```
+
+---
+
+### ✅ 4. Commit with a message
+
+```bash
+git commit -m "Initial commit"
+```
+
+---
+
+### 🌐 5. Link to your GitHub repository
+
+```bash
+git remote add origin https://github.com/amit51910636/DS_2025.git
+```
+
+---
+
+### 🔁 6. Rename current branch to `main`
+
+```bash
+git branch -M main
+```
+
+---
+
+### ⬆️ 7. Push your code (first time)
+
+```bash
+git push -u origin main
+```
+
+---
+
+### ⚠️ 8. If push fails due to existing remote commits
+
+```bash
+git pull origin main --allow-unrelated-histories
+```
+
+---
+
+### 🔄 9. Push again after resolving
+
+```bash
+git push -u origin main
+```
+
+---
+
+Would you like this saved as a `.txt`, `.md`, or Jupyter notebook cell?
+
