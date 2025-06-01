@@ -1,4 +1,4 @@
 git add .
-git commit -m "github commands"
+git commit -m "numpy python"
 git push -u origin main
 git status
