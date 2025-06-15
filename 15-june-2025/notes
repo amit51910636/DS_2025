@@ -443,3 +443,46 @@ x, y
 # Today's session was good (git and visualization both) , #monalarmy 
 
 -----------------------------------
+Terminal history:
+
+
+  Id CommandLine
+  -- -----------
+   1 try { . "c:\Users\simil\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" }... 
+   2 git init
+   3 git add .
+   4 git commit -m "changes"
+   5 git push
+   6 cls
+   7 git status
+   8 clear
+   9 git add .
+  10 git commit -m "new file added"
+  11 git push -u origin main
+  12 cls
+  13 git pull
+  14 cls
+  15 git status
+  16 git add .
+  17 git add. && git commit -m "updated file"
+  18 git commit -m "updated file"
+  19 git push -u origin main
+  20 git status
+  21 clear
+  22 git pull
+  23 git branch test_1
+  24 git checkout test_1
+  25 git branch
+  26 git add .
+  27 git commit -m "new branch copy added"
+  28 git push -u origin test_1
+  29 git add .
+  30 git commit -m "new branch copy added2"
+  31 git push -u origin test_1
+  32 git status
+  33 cls
+  34 git branch
+  35 git add .
+  36 git commit -m "visualization and git"
+  37 git push
+  38 git status
