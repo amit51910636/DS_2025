@@ -13,3 +13,38 @@ git status
 = file itself is not tracked
 
 
+git add .
+= add everything
+
+git commit -m "new file added"
+
+git push -u origin main
+
+============================
+Each and every commit has "id"
+
+We can go to our previous commit as well
+
+We can also upload files via "UI" or create itself
+e.g. b.txt
+= commit itself
+
+In our remote repository we have 3 files
+file1
+file2
+file3
+
+Local:
+file1
+file2
+= i don't have file3
+
+= git will throw error [number of files are inconsitency/not matching]
+= multiple people working on same github
+
+git pull
+= it will check from the remote repository vs current repository/local files are updated or not
+= bring changes from remote repository to local repository
+= we can see the file in local system
+
+
