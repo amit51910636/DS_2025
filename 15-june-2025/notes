@@ -47,4 +47,26 @@ git pull
 = bring changes from remote repository to local repository
 = we can see the file in local system
 
+---------------------------------------------------------------------------------
+Without testing we should never push to the main branch[changes]
+
+= We will create a new branch and keep the code until it is tested
+
+= latest code - take and create a copy
+= always do git pull
+
+git pull
+
+git branch test_1
+= it will create a new copy of branch
+= previously it was only main
+
+git checkout test_1
+= it will switch our branch, now we will be in "test_1" branch
+
+git branch
+= to see how many branch we have
+
+git checkoutput test_1
+= switch to branch test_1
 
