@@ -1,10 +1,15 @@
 Topic - Data Visualization
 
-
+git init
 git add .
 git commit -m "change"
 git push -u origin main / git push 
+= to send changes to our remote repository
 
 we are pushing to main 
+==================================================
+
+git status 
+= file itself is not tracked
 
 
