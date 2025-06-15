@@ -1,0 +1,10 @@
+Topic - Data Visualization
+
+
+git add .
+git commit -m "change"
+git push -u origin main / git push 
+
+we are pushing to main 
+
+
