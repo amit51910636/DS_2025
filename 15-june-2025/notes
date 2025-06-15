@@ -70,3 +70,12 @@ git branch
 git checkoutput test_1
 = switch to branch test_1
 
+git add .
+
+git commit -m "new branch copy added"
+
+
+ git push -u origin test_1
+ = new after reloading browserwe can see the new "test_1" branch
+
+ 
