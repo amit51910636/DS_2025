@@ -78,4 +78,368 @@ git commit -m "new branch copy added"
  git push -u origin test_1
  = new after reloading browserwe can see the new "test_1" branch
 
+ ------------------------------------------------------------------------
+ git branch branch_name
+
+ ![git commands](imagfde.png)
+
+git add . && git commit -m "messages"
+
+git clone https://github.com/Monalsingh/dummy1.git
+= git clone remote url 
+
+========================================================
+
+
+Data visualization
+Box plots
+Pie chart
+
+-----------------------------------------------------------
+
+openxyl - used to read excel file in pandas
+
+Reading different sheets
+= df1, df2
+
+= 45 second it took
+
+![reading excel from dataset](image-1.png)
+
+shape = 1 million rows[1067371], 8 columns
+= very large dataset
+
+df.info 
+= we will get all information about dataframe
+= some values are non-null
+= we can see the datatype
+
+![see the columns and its values](image-2.png)
+
+df.describe()
+= it gives numerical column statistics
+= invoice is pandas datatype
+= NaN - means it has null values
+
+# Cleaning & Feature Engineering
+= drop all NA
+= remove from invoice and customer id 
+
+![Removing all the NA values](image-3.png)
  
+ = after removing check how many rows we are left with
+ = we are losing the data
+
+ ![after dropping NA values](image-4.png)
+
+![df.head = see the first 5 rows data](image-5.png)
+
+
+= we should remove all invoice start with "C" - cancelled
+~ = negation (inverse)/opposite of it
+![remove cancelled data](image-6.png)
+
+df.shape
+= see the changed data
+= around 90 thousand data we have removed
+= data cleaning -  we are cleaning the data
+
+Keeping the quantity and price with positive values
+
+![removing/filtering negative values](image-7.png)
+
+df.shape
+= see if it provide any changes
+= negative values not good for data visualization
+
+# Feature engineering
+= we don't know whether data is negative or positive
+= make sure filtering it correctly
+
+= from quantity and price we will get revenue
+= want to heave the year and its month as well in another column[extract the month]
+
+# 2009 -01 
+= what is the month
+
+![feature engineering - creating new feature](image-8.png)
+
+
+![Feature engineering & data type conversion](image-9.png)
+
+= clearning the data for visualization
+
+df.shape
+![year information we can see and revenue](image-10.png)
+
+
+= dont with feature engineering and data cleaning
+===============================
+
+# What is matplotlib
+
+= python library for 2D plotting
+= save your images into png, pdf, svg
+= save the plots you are creating
+= download those files
+= use it wherever you want
+= upload it as well
+
+# matplotlib --> seaborn(visualization library which uses matplotlib), pandas plot(also use matplotlib internally)
+
+= as a plotting engine
+= it is the core of plotting
+= low level control
+= fine-tuning your plots as well
+
+
+= pandas provides wrapper of numpy
+
+= import it as plt 
+![import matplotlib](image-11.png)
+
+= Group by concept
+= concept of database
+= plot the visualization
+
+= person a,b,c,d,e,f 
+= country ind, us, ca, ind, us, ca
+
+= suppose we have their salary
+= 1000, 2000, 2000, 1000, 3000, 4000
+
+= name, country, salary
+
+![group by operation on country](image-12.png)
+
+= output 
+a ind 1000
+d ind 3000
+b us 2000
+e us 1000
+
+= grouped them together (ind, ind), (us, us), (ca, ca)
+= this is called as group by operation
+
+![based on country created groups](image-13.png)
+
+= i want to plot monthly revenue
+
+![plot revenue , invoice present in which month/multiple invoice in month also](image-14.png)
+
+= invoice is the id, month, revenue
+= revenue is the new feature that we calculated
+
+invoice, month, revenue
+1, 2009-12, 26
+2, 2010-01 22
+3, 2009-12 100
+4, 2010-01 2
+5
+6
+
+= this is our dataframe
+
+= task is to get revenue for month 2009 and 2012 or (2009-12)
+= check which of the column have 2009-12
+= select those rows
+= take their revenue out
+
+![we are creating groups/want group information](image-15.png)
+
+= for all the unique month available, get the revenue
+
+= get revenue by month
+groupby('month')
+2009-12
+2010-01
+2010-03
+2010-04
+
+= will be different group(group1, group2, group3, group4)
+= check which group has how many data
+
+![data in each group](image-16.png)
+
+= do their sum separately
+= we will get a final dataframe
+
+![dataframe as output](image-17.png)
+
+![group by month column](image-18.png)
+
+![extract revenue](image-19.png)
+
+![sum and sort revenue index](image-20.png)
+= sorting the index
+
+![print monthly revenue](image-21.png)
+
+![check the head of revenue](image-22.png)
+
+# line - plot
+= first visualization
+
+e.g. we doing panting
+= require canvas to print
+= size of the canvas
+
+![define the canvas (12,6) in inhches](image-23.png)
+
+= we need to plot
+= configuring graph
+= configure data
+= x-axis (month), y-axis(revenue)
+
+![index give month index](image-24.png)
+
+= first argument is x-asix, and second y-axis
+= marker is 'o' - circular points in graph
+
+![circle in group](image-25.png)
+= o means circle
+
+![plot the data](image-26.png)
+
+= see the data(plt.show())
+
+![fill the data - see the canvas - run it](image-27.png)
+
+![looks like this](image-28.png)
+
+= see that this graph can be more information
+= not able to read the points
+= months are overlapping
+= all are horizontal
+= different between points is not too large, thats why it is overlapping
+= rotate it
+= currently its 0 degree
+
+![change the configuration](image-29.png)
+
+![label rotate by 45 degree](image-30.png)
+
+= match the correct line here
+
+= see the graph with more focus
+
+![mention grid to see grid lines](image-31.png)
+
+![graph more easy to understand now with grid lines](image-32.png)
+
+= someone wont understand what x-axis ad y-axis is 
+
+![label in x-axis 'Year-Month'](image-33.png)
+
+![add label in y-axis also](image-34.png)
+
+![this graph is about revenue over month](image-35.png)
+= revenue per month
+= we can download directly also 
+
+![add a title](image-36.png)
+
+![able to see the title](image-37.png)
+
+![change style of plot - classic](image-38.png)
+= more important is graph(dots are different color)
+
+![if want to know what are the styles and other different things available](image-39.png)
+= first output to analyze the data
+= business person will be able to derive insight from it
+= this is what data analysis is
+
+= we should not show if want to save the graph
+
+![if want to save, dpi - 300(highest quality)](image-40.png)
+= don't use show , then only it will save
+
+![it will save now after commenting show](image-41.png)
+
+===================================
+
+= gg is library in "R"
+![ggplot](image-42.png)
+
+= write text on each of these circles(write for loop - iterate over values)
+= plt.text (accept coordinate/index[access one by one -i])
+= x and y we provided 
+= we want to write value in point
+= convert value to integer
+= write in center of points(ha - horizontal alignment)
+= want the font size (text on top of circle =8 )
+
+![now graph point will show value](image-43.png)
+= converted both to int
+
+![value should be string](image-44.png)
+
+![can check to left also - horizontal alignment](image-45.png)
+
+= when we do right, it will go left
+
+= revenue goes up
+![revenue analysize , up in october, november](image-46.png)
+
+![:; will separate thousands = 831,615](image-47.png)
+
+= check the default value(fontdict)
+============================
+= create a dictionary [fontsize will be overriden]
+
+= this is better if want to pass font in all cases, don't need to write for each plot
+![common font](image-48.png)
+
+![this is bold now](image-49.png)
+
+= increase y to see clearly
+![increased v value to see clearly - coordinates](image-50.png)
+
+![changing the points how it looks like, not changing the coordinate](image-51.png)
+
+e.g. suppose text="person"
+x, y
+1,1
+
+![changing where this text is going to be written](image-52.png)
+= better for visualization
+
+# if my objective is show top 10 revenue-generating countries
+
+= group by country - do the sum - do the sort - ascending=false
+
+![make a dataframe = country revenue](image-53.png)
+
+![start from lowest then increase = ascending](image-54.png)
+
+= plt.plot - default uses line plot
+
+# bar plot
+![define canvas](image-55.png)
+
+![color of the bar](image-56.png)
+
+![tight layout - removes padding](image-57.png)
+
+![change color to orange - vertical bar plot](image-58.png)
+
+![barh - if horizontal](image-59.png)
+
+![mention color and barh - horizontal](image-60.png)
+
+= hexcode of the colors
+= html color code - click on any color
+
+![copy the hexcode from above site - html color code](image-61.png)
+
+![color will be picked up](image-62.png)
+
+![same color what we seen in html](image-63.png)
+
+![xticks - below ticks](image-64.png)
+
+= continue visualization next week
+
+# Today's session was good (git and visualization both) , #monalarmy 
+
+-----------------------------------
